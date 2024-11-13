@@ -32,7 +32,8 @@ export default function RootLayout() {
     <FlagshipProvider visitorData={{
       id: "1",
       isAuthenticated: true,
-    }} apiKey="" envId="">
+      hasConsented: true,
+    }} apiKey="" envId=''>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
